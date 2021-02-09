@@ -17,7 +17,6 @@ function TitleDetails({ recipes, pathname, id }) {
   const [copy, setCopy] = useState(false);
   const { meals } = detailRecipe;
   const { drinks } = detailRecipe;
-
   useEffect(() => {
     isAlreadyFavorite(id);
   }, []);

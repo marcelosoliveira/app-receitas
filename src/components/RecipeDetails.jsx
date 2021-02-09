@@ -32,7 +32,7 @@ function RecipeDetails({ recipes, id }) {
         <ImageDetails recipes={ recipes } />
         <TitleDetails
           recipes={ recipes }
-          pathname={ `http://localhost:3000/${recipes}/${id}` }
+          pathname={ `https://react-tomperos.herokuapp.com/${recipes}/${id}` }
           id={ id }
         />
       </div>

@@ -60,7 +60,7 @@ body {
 
 .div-button-progress button {
   bottom: 0;
-  width: 75%;
+  width: 27%;
   background: #D90429;
   color: white;
   font-weight: bold;
@@ -206,7 +206,7 @@ body {
 }
 
 .div-button-details button {
-  width: 75%;
+  width: 27%;
   background: #D90429;
   color: white;
   font-weight: bold;
@@ -258,9 +258,9 @@ body {
   text-decoration: line-through;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 320px) {
   .div-button-details button {
-    width: 27%;
+    width: 100%;
     background: #D90429;
     color: white;
     font-weight: bold;
@@ -273,7 +273,175 @@ body {
   }
   .div-button-progress button {
     bottom: 0;
-    width: 27%;
+    width: 100%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    position: fixed;
+    padding: 1.2rem 0rem;
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .div-button-details button {
+    width: 60%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    padding: 1.2rem 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .div-button-progress button {
+    bottom: 0;
+    width: 60%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    position: fixed;
+    padding: 1.2rem 0rem;
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .div-button-details button {
+    width: 45%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    padding: 1.2rem 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .div-button-progress button {
+    bottom: 0;
+    width: 45%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    position: fixed;
+    padding: 1.2rem 0rem;
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .div-button-details button {
+    width: 36%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    padding: 1.2rem 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .div-button-progress button {
+    bottom: 0;
+    width: 36%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    position: fixed;
+    padding: 1.2rem 0rem;
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .div-button-details button {
+    width: 30%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    padding: 1.2rem 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .div-button-progress button {
+    bottom: 0;
+    width: 30%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    position: fixed;
+    padding: 1.2rem 0rem;
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px)  and (max-width:1600) {
+  .div-button-details button {
+    width: 26%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    padding: 1.2rem 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .div-button-progress button {
+    bottom: 0;
+    width: 26%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    position: fixed;
+    padding: 1.2rem 0rem;
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .div-button-details button {
+    width: 23%;
+    background: #D90429;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border: none;  
+    border-radius: 4px;
+    padding: 1.2rem 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .div-button-progress button {
+    bottom: 0;
+    width: 23%;
     background: #D90429;
     color: white;
     font-weight: bold;

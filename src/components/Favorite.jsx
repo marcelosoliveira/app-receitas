@@ -62,7 +62,7 @@ function Favorite({ recipesStorage, setRecipesStorage }) {
               </div>
             </div>
             <div className="div-buttons-share-favorite">
-              <CopyToClipboard text={ `http://localhost:3000/${type}s/${id}` }>
+              <CopyToClipboard text={ `https://react-tomperos.herokuapp.com/${type}s/${id}` }>
                 <button
                   type="button"
                   onClick={ () => copyLink() }

@@ -55,7 +55,7 @@ function Done({ recipesStorage }) {
               </div>
               <CopyToClipboard
                 className="div-buttons-share-favorite-feitas div-buttons-share"
-                text={ `http://localhost:3000/${type}s/${id}` }
+                text={ `https://react-tomperos.herokuapp.com/${type}s/${id}` }
               >
                 <button
                   type="button"
