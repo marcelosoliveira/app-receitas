@@ -1,0 +1,37 @@
+*, h3 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content-header {  
+  height: 50px;
+}
+
+.content-header header {
+  height: 100%;
+  background-color: #EF233C;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content-header .profile, .search {
+  align-self: center;
+}
+
+.content-header .title {
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  color: white;
+}
+
+.content-header .profile {
+  justify-self: left;
+  padding-left: 1rem;
+}
+
+.content-header .search {
+  justify-self: right;
+  padding-right: 1rem;
+}
