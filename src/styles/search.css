@@ -49,12 +49,13 @@
   }
 
   .div-search .label-input-letra {
-
+    text-align: center;
     width: 30%
   }
   
   .div-search .label-input-ingred {
     margin-left: 18px;
+    text-align: center;
     width: 30%
   }
   
