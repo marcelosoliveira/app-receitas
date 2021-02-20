@@ -8,11 +8,12 @@ function MainRecipes() {
   const { mealsData, drinksData } = useContext(FoodAppContext);
   const history = useHistory();
   const [handleToDetail, recipes, zero, doze] = useRecipes(history);
+  const { showSearch } = useContext(FoodAppContext);
 
   if (recipes[1] === 'comidas') {
     return (
       <section>
-        <section className="section-meals">
+        <section className={showSearch ? "section-meals-search" : "section-meals"}>
           {mealsData && mealsData
             .slice(zero, doze)
             .map(({ idMeal, strMeal, strMealThumb }, index) => (

@@ -6,6 +6,7 @@ import { mealsAPI, drinksAPI } from '../services';
 function useSearch() {
   const { setMealsData, setDrinksData } = useContext(FoodAppContext);
   const [fields, setFields] = useState({ term: '', type: '' });
+  const [clean, setClean] = useState();
 
   const handlerChange = ({ target }) => {
     const { name, value } = target;
@@ -37,9 +38,11 @@ function useSearch() {
       setDrinksData(drinks);
       handlerData(drinks, history, 'idDrink');
     }
+    setClean('');
+    setClean();
   };
 
-  return [handlerChange, handlerClick];
+  return [handlerChange, handlerClick, clean];
 }
 
 export default useSearch;

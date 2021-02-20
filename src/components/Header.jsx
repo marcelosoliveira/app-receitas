@@ -40,6 +40,7 @@ function Header({ title, isSearchable }) {
           to="/perfil"
           className="profile"
           tabIndex="-1"
+          onClick={() => setShowSearch(!showSearch)}
         >
           <img src={ profileIcon } data-testid="profile-top-btn" alt="Profile Icon" />
         </Link>

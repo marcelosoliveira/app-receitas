@@ -3,10 +3,10 @@
 # dependencies
 /node_modules
 /cypress
-/cypress.json
 /coverage
 /.pnp
 .pnp.js
+/cypress.json
 
 # testing
 /coverage
@@ -26,7 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode
-
 
 cypress/screenshots/
 cypress/videos/

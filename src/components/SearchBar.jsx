@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import useSearch from '../hooks/useSearch';
+import '../styles/search.css'
 
 function SearchBar({ title }) {
-  const [handlerChange, handlerClick] = useSearch();
+  const [handlerChange, handlerClick, clean] = useSearch();
   const history = useHistory();
+  const isFocus = useRef();
   return (
-    <div>
+    <div className="div-search">
       <input
         name="term"
         placeholder="Buscar receita"
         type="text"
+        value={clean}
+        ref={isFocus}
+        autoFocus
         data-testid="search-input"
         onChange={ handlerChange }
       />
-      <label htmlFor="ingredient">
+      <label
+        className="label-input-ingred"
+        htmlFor="ingredient"       
+      >
         <input
           data-testid="ingredient-search-radio"
           type="radio"
@@ -27,7 +35,10 @@ function SearchBar({ title }) {
         />
         Ingredientes
       </label>
-      <label htmlFor="name">
+      <label
+        className="label-input-nome"
+        htmlFor="name"
+      >
         <input
           data-testid="name-search-radio"
           type="radio"
@@ -38,7 +49,10 @@ function SearchBar({ title }) {
         />
         Nome
       </label>
-      <label htmlFor="first-letter">
+      <label
+        className="label-input-letra"
+        htmlFor="first-letter"        
+      >
         <input
           data-testid="first-letter-search-radio"
           type="radio"
@@ -52,7 +66,10 @@ function SearchBar({ title }) {
       <button
         type="button"
         data-testid="exec-search-btn"
-        onClick={ (e) => handlerClick(e, history) }
+        onClick={ (e) => {
+          handlerClick(e, history)
+          isFocus.current.focus(); 
+        }}
         value={ title }
       >
         Buscar

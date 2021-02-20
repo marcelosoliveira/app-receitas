@@ -23,6 +23,7 @@
   justify-self: center;
   text-align: center;
   align-self: center;
+  font-size: 25px;
   color: white;
 }
 
@@ -34,4 +35,5 @@
 .content-header .search {
   justify-self: right;
   padding-right: 1rem;
+  margin-right: 12px;
 }

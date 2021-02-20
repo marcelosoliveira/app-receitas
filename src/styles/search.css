@@ -1,0 +1,93 @@
+.div-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.div-search input {
+  font-size: 20px;
+  width: 25%;
+}
+
+.div-search .label-input-letra {
+  margin-right: 10px;
+  width: 11%
+}
+
+.div-search .label-input-ingred {
+  margin-right: 10px;
+  width: 10%
+}
+
+.div-search .label-input-nome {
+  width: 8%;
+}
+
+.div-search button {
+  background-color: #2b2d42;
+  border: none;
+  color: aliceblue;
+  font-size: 20px;
+  margin-left: 20px; 
+  width: 10%; 
+}
+
+@media only screen and (min-width: 350px) and (max-width: 800px) {
+  .div-search {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .div-search input {
+    font-size: 25px;
+    margin-bottom: 5px;
+    width: 90%;
+  }
+
+  .div-search .label-input-letra {
+
+    width: 30%
+  }
+  
+  .div-search .label-input-ingred {
+    margin-left: 18px;
+    width: 30%
+  }
+  
+  .div-search .label-input-nome {
+    margin-right: 25px;
+    text-align: center;
+    width: 20%;
+  }
+
+  .div-search button {
+    background-color: #2b2d42;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%; 
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 800px) {
+  .section-meals-search {
+    background-color: #EDF2F4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem 1rem;
+    margin-top: 90px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+  }
+}

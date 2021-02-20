@@ -36,6 +36,18 @@
   background-color: #EDF2F4;
 }
 
+.section-meals-search {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+  padding-top: 1rem;
+  background-color: #EDF2F4;
+}
+
 .div-meals {
   border: 1px solid black;
   border-radius: 6px;
@@ -61,7 +73,7 @@
   padding-bottom: .4rem;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .div-category {
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +119,16 @@
   }
   
   .section-meals {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .section-meals-search {
     align-self: center;
     display: flex;
     flex-wrap: wrap;
