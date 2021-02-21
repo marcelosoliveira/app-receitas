@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 /* import { Link } from 'react-router-dom'; */
 
@@ -6,8 +6,10 @@ import {
   Ingredient, Recomendations, Video,
   ImageDetails, TitleDetails, Instructions, ButtonDetails,
 } from './index';
+import FoodAppContext from '../context/FoodAppContext';
 
 function RecipeDetails({ recipes, id }) {
+  const { setShowSearch } = useContext(FoodAppContext);
   const inProgressRecipes = JSON.parse(localStorage.getItem('inProgressRecipes'));
   const doneRecipes = JSON.parse(localStorage.getItem('doneRecipes'));
 
@@ -25,6 +27,10 @@ function RecipeDetails({ recipes, id }) {
       return ids.find((key) => key === id);
     }
   };
+
+  useEffect(() => {
+    setShowSearch(false);
+  }, []);
 
   return (
     <div className="div-recipes-details">
